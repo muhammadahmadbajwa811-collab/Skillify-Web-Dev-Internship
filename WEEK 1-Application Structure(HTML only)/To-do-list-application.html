@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List Application</title>
+    </head>
+    <body>
+        <header><h1>Task Manager</h1>
+            <p>Manage your Daily Tasks Easily</p>
+        </header>
+
+        <section>
+            <h2>Add new Task</h2>
+            <form>
+                <label for="TaskName">Task Name:</label>
+                <input type="text" id="TaskName" name="TaskName" placeholder="Enter task name"></br></br>
+
+                <label for="TaskCategory">Task Category:</label>
+                <input type="text" id="TaskCategory" name="TaskCategory" placeholder="Optional"></br></br>
+
+                <label for="DueDate">Due Date:</label>
+                <input type="date" id="DueDate" name="DueDate"></br></br>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Task List</h2>
+            <ul>
+                <li>Practice Python | Status: (Pending)</li>
+                <li>Practice HTML   | Status: (Completed)</li>
+                <li>Practice CSS | Status: (Pending)</li>
+                <li>Read a Book | Status: (In Progress)</li>
+                <li>Prepare Documentation | Status: (In Progress)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Task Details</h2>
+            <ol>
+                <h3><li>Practice Python</li></h3>
+                <ul>
+                    <li>Description: Practice Loops, Conditionals and Fucntions</li>
+                    <li>Priority Level: High</li>
+                    <li>Status: Pending</li>
+                    <li>Due Date: 08/15/2026</li>
+                </ul>
+
+                <h3><li>Practice HTML</li></h3>
+                <ul>
+                    <li>Description: Practice Lists, headers and Tables</li>
+                    <li>Priority Level: medium</li>
+                    <li>Status: Completed</li>
+                    <li>Due Date: 09/19/2026</li>
+                </ul>
+            </ol>            
+        </section>
+        
+        <section>
+            <h2>Task Status</h2>
+            <ul>
+                <h3><li>Pending: 2</li></h3>
+                <h3><li>Completed: 1</li></h3>
+                <h3><li>In Progress: 2</li></h3>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Feedback</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name"></br></br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid email"></br></br>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="Enter your feedback"></textarea></br></br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer><p>&copy; To-Do List Application. All rights reserved.</p></footer>
+    </body>
+</html>
