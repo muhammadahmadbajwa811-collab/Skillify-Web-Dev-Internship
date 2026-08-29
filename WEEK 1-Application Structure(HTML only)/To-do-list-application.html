@@ -2,13 +2,14 @@
 <html>
     <head>
         <title>To-Do List Application</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header><h1>Task Manager</h1>
+        <header id="header"><h1>Task Manager</h1>
             <p>Manage your Daily Tasks Easily</p>
         </header>
 
-        <section>
+        <section id="add-task">
             <h2>Add new Task</h2>
             <form>
                 <label for="TaskName">Task Name:</label>
@@ -24,48 +25,48 @@
             </form>
         </section>
 
-        <section>
+        <section id="task-list">
             <h2>Task List</h2>
             <ul>
-                <li>Practice Python | Status: (Pending)</li>
-                <li>Practice HTML   | Status: (Completed)</li>
-                <li>Practice CSS | Status: (Pending)</li>
-                <li>Read a Book | Status: (In Progress)</li>
-                <li>Prepare Documentation | Status: (In Progress)</li>
+                <li class="pending">Practice Python | Status: (Pending)</li>
+                <li class="completed">Practice HTML   | Status: (Completed)</li>
+                <li class="pending">Practice CSS | Status: (Pending)</li>
+                <li class="inprogress">Read a Book | Status: (In Progress)</li>
+                <li class="inprogress">Prepare Documentation | Status: (In Progress)</li>
             </ul>
         </section>
 
-        <section>
+        <section id="task-details">
             <h2>Task Details</h2>
             <ol>
-                <h3><li>Practice Python</li></h3>
+                <h3><li class="task-title">Practice Python</li></h3>
                 <ul>
                     <li>Description: Practice Loops, Conditionals and Fucntions</li>
                     <li>Priority Level: High</li>
-                    <li>Status: Pending</li>
+                    <li class="pending">Status: Pending</li>
                     <li>Due Date: 08/15/2026</li>
                 </ul>
 
-                <h3><li>Practice HTML</li></h3>
+                <h3><li class="task-title">Practice HTML</li></h3>
                 <ul>
                     <li>Description: Practice Lists, headers and Tables</li>
                     <li>Priority Level: medium</li>
-                    <li>Status: Completed</li>
+                    <li class="completed">Status: Completed</li>
                     <li>Due Date: 09/19/2026</li>
                 </ul>
             </ol>            
         </section>
         
-        <section>
+        <section id="task-status">
             <h2>Task Status</h2>
             <ul>
-                <h3><li>Pending: 2</li></h3>
-                <h3><li>Completed: 1</li></h3>
-                <h3><li>In Progress: 2</li></h3>
+                <h3><li class="pending">Pending: 2</li></h3>
+                <h3><li class="completed">Completed: 1</li></h3>
+                <h3><li class="inprogress">In Progress: 2</li></h3>
             </ul>
         </section>
 
-        <section>
+        <section id="feedback">
             <h2>Feedback</h2>
             <form>
                 <label for="name">Name:</label>
@@ -81,6 +82,6 @@
             </form>
         </section>
 
-        <footer><p>&copy; To-Do List Application. All rights reserved.</p></footer>
+        <footer id="footer"><p>&copy; To-Do List Application. All rights reserved.</p></footer>
     </body>
 </html>
