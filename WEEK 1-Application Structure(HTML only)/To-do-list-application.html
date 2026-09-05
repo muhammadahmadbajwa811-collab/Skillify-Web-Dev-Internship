@@ -3,8 +3,11 @@
     <head>
         <title>To-Do List Application</title>
         <link rel="stylesheet" href="style.css">
+        <script src="MuhammadAhmadBajwa-Task4-JavaScript.js" defer></script>
     </head>
     <body>
+        <div id="toast"></div>
+
         <header id="header"><h1>Task Manager</h1>
             <p>Manage your Daily Tasks Easily</p>
         </header>
@@ -15,8 +18,15 @@
                 <label for="TaskName">Task Name:</label>
                 <input type="text" id="TaskName" name="TaskName" placeholder="Enter task name"></br></br>
 
+                <label for="TaskPriority">Priority</label>
+                <select id="TaskPriority" name="TaskPriority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select><br><br>
+
                 <label for="TaskCategory">Task Category:</label>
-                <input type="text" id="TaskCategory" name="TaskCategory" placeholder="Optional"></br></br>
+                <input type="text" id="TaskCategory" name="TaskCategory" placeholder="e.g: Programming"></br></br>
 
                 <label for="DueDate">Due Date:</label>
                 <input type="date" id="DueDate" name="DueDate"></br></br>
@@ -27,43 +37,19 @@
 
         <section id="task-list">
             <h2>Task List</h2>
-            <ul>
-                <li class="pending">Practice Python | Status: (Pending)</li>
-                <li class="completed">Practice HTML   | Status: (Completed)</li>
-                <li class="pending">Practice CSS | Status: (Pending)</li>
-                <li class="inprogress">Read a Book | Status: (In Progress)</li>
-                <li class="inprogress">Prepare Documentation | Status: (In Progress)</li>
+            <ul>              
             </ul>
-        </section>
-
-        <section id="task-details">
-            <h2>Task Details</h2>
-            <ol>
-                <h3><li class="task-title">Practice Python</li></h3>
-                <ul>
-                    <li>Description: Practice Loops, Conditionals and Fucntions</li>
-                    <li>Priority Level: High</li>
-                    <li class="pending">Status: Pending</li>
-                    <li>Due Date: 08/15/2026</li>
-                </ul>
-
-                <h3><li class="task-title">Practice HTML</li></h3>
-                <ul>
-                    <li>Description: Practice Lists, headers and Tables</li>
-                    <li>Priority Level: medium</li>
-                    <li class="completed">Status: Completed</li>
-                    <li>Due Date: 09/19/2026</li>
-                </ul>
-            </ol>            
         </section>
         
         <section id="task-status">
             <h2>Task Status</h2>
-            <ul>
-                <h3><li class="pending">Pending: 2</li></h3>
-                <h3><li class="completed">Completed: 1</li></h3>
-                <h3><li class="inprogress">In Progress: 2</li></h3>
-            </ul>
+                <ul>
+                    <h3><li class="pending">Pending: <span  id="pendingBadge">0</span></li></h3>
+
+                    <h3><li class="completed">Completed: <span id="completedBadge">0</span></li></h3>
+
+                    <h3><li class="inprogress">In Progress: <span id="inprogressBadge">0</span></li></h3>
+                </ul>
         </section>
 
         <section id="feedback">
